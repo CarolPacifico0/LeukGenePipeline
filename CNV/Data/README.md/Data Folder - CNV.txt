@@ -1,0 +1,17 @@
+#Data Folder
+
+This folder contains derived and summary data used in the CNV and mutation analyses.
+
+## Included files:
+
+- `CNV_Summary_Leukemia.csv`: Summary of CNV alterations per gene, derived from the original COSMIC file.
+- `top_genes_unique.txt`: List of top 200 genes with CNV events, used for enrichment analysis.
+- `PEA_significant_terms_200genes.csv`: Significant enriched terms from the pathway enrichment analysis.
+- `gProfiler_hsapiens_01-05-2025_16-56-49__intersections.csv`: Output of GO enrichment using g:Profiler.
+
+## Not included:
+
+- **Original data files from COSMIC (e.g., `Mutations_Leukemia.csv`, `CNV_Leukemia.csv`) are not uploaded** due to licensing restrictions.
+  - These files were used locally for analysis and pre-processing only.
+  - If you have access to COSMIC, you can reproduce the results by following the notebooks.
+
