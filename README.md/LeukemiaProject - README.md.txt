@@ -1,25 +1,38 @@
-#Leukemia Genomic Alteration Analysis
+Leukemia Genomic Analysis – CNV, Mutations, and Enrichment
+This project integrates point mutation data and copy number variation (CNV) profiles from leukemia samples to identify genes frequently altered at multiple genomic levels. The analyses include mutation profiling, CNV aggregation, classification, pathway enrichment analysis (PEA), and GO enrichment, all performed in Google Colab notebooks.
 
-This project explores genomic alterations in leukemia using two complementary datasets:
+Project Structure
+Leukemia_Project/
+│   ├── LICENSE
 
-- **Somatic point mutations** (from COSMIC)
-- **Copy number variations (CNVs)** (also from COSMIC)
+├── CNV/
+│   ├── Data/
+│   ├── PLOTS/
+│   ├── TABLES/
+│   └── CNV_Analysis.ipynb
+│
+├── Mutations/
+│   ├── Data/
+│   ├── PLOTS/
+│   ├── TABLES/
+│   └── Mutation_Analysis.ipynb
+│
+├── Expression_GO_PEA.ipynb
+└── README.md
 
-Our objective was to identify genes frequently altered at multiple levels and perform enrichment analyses to gain insights into affected biological pathways.
+Colab Notebooks
+Mutation Analysis – https://colab.research.google.com/drive/1Ye0DJeEOHqh8LHxw6M4cbnDUDwYpI5xw#scrollTo=GYUB-Wqd6b1M
+Mutation frequency by gene and mutation type.
 
-## Overview
+CNV Analysis – https://colab.research.google.com/drive/1jWhdhO74-XTfhmzP-OH0neUUKJyuI_2T#scrollTo=zo_RVDeevKT_
+Aggregation of CNV events, mutation-CNV overlap, CNV-type classification.
 
-We conducted:
+Expression / Enrichment (GO & PEA) – https://colab.research.google.com/drive/1xrRFJGal-jbZvlEfnO6ku84TeOKVSmZi?usp=sharing
+Pathway enrichment analysis and GO enrichment using top 200 CNV-altered genes.
 
-- Mutation type classification
-- CNV aggregation and subtype classification
-- Visual comparisons between mutation and CNV events
-- Pathway Enrichment Analysis (PEA)
-- Gene Ontology (GO) enrichment
+Methodological Notes
+All enriched terms were adjusted using post-hoc multiple testing correction (Benjamini-Hochberg).
 
-> All enrichment steps were performed using gene lists derived from the top 200 most altered genes (by CNV frequency). All p-values were adjusted using post hoc multiple testing correction (FDR).
+Files were saved in /PLOTS/ as .tiff and /TABLES/ as .csv.
 
-
-## Data Access and Licensing
-
-Original mutation and CNV files from COSMIC are **not included** in this repository due to licensing restrictions. Only derived and summarized files are shared in `/data/`.
+The input mutation and CNV datasets originated from the COSMIC database and are not publicly shared in compliance with license restrictions.
