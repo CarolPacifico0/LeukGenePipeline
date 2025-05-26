@@ -1,18 +1,57 @@
-Leukemia Genomic Analysis – CNV, Mutations, and Enrichment
-This project integrates point mutation data and copy number variation (CNV) profiles from leukemia samples to identify genes frequently altered at multiple genomic levels. The analyses include mutation profiling, CNV aggregation, classification, pathway enrichment analysis (PEA), and GO enrichment, all performed in Google Colab notebooks.
+Leukemia Genomic Analysis - CNV, Mutations, and Enrichment
 
-Colab Notebooks
-Mutation Analysis – Mutation frequency by gene and mutation type. [Mutational Analysis – COSMIC](https://colab.research.google.com/drive/1Ye0DJeEOHqh8LHxw6M4cbnDUDwYpI5xw)
+This repository contains a collection of interactive pipelines for analyzing somatic mutations and copy number variations (CNVs) in leukemia-related datasets. It was inspired by the structure of [QuickProt](https://github.com/OmarArias-Gaguancela/QuickProt) and developed to allow fast and reproducible exploration of genomic alterations and enrichment analyses.
 
-CNV Analysis – Aggregation of CNV events, mutation-CNV overlap. [CNV Analysis](https://colab.research.google.com/drive/1jWhdhO74-XTfhmzP-OH0neUUKJyuI_2T)
+## Overview
+
+The project includes three main analysis notebooks:
+
+- **Mutations Analysis:** Classifies mutation types from COSMIC mutation files and visualizes their distribution.
+- **CNV Analysis:** Processes CNV summary tables to classify alteration types, generate CNV frequency plots, and integrate with mutation data.
+- **Pathway Enrichment Analysis (PEA) and GO Analysis:** Performs enrichment based on top altered genes using [g:Profiler](https://biit.cs.ut.ee/gprofiler/gost), with PEA and GO outputs saved and visualized.
+
+---
+
+##  Input Data Format
+
+Users can input their own files to run the analysis. Please ensure your input files follow the structure described below:
+
+- `Mutations_Leukemia.csv` must include columns:
+  - `Gene Name`, `AA Mutation`, `CDS Mutation`, etc.
+- `CNV_Leukemia.csv` must include columns:
+  - `Gene`, `Gain`, `High-level Gain`, `Loss`, `High-level Loss`, `No Change`, `Total Samples`.
+
+All input files must be in **CSV format**, comma-separated, and uploaded to the correct `Data/` folder within each module.
+
+> Mutation and CNV input data used in this project were retrieved from the [COSMIC database](https://cancer.sanger.ac.uk/cosmic). Please note that full data sharing is restricted under COSMIC licensing.
+
+---
+
+##  Notebooks (Open in Colab)
+
+- [Open Mutation Analysis](https://colab.research.google.com/drive/1AccuCMGS-V_6GP-py_TXhL6sWOORjwOE)
+- [Open CNV Analysis](https://colab.research.google.com/drive/1Ye0DJeEOHqh8LHxw6M4cbnDUDwYpI5xw)
+- [Open PEA and GO Analysis](https://colab.research.google.com/drive/1xrRFJGal-jbZvlEfnO6ku84TeOKVSmZi)
+
+---
+
+## Statistical Notes
+All enrichment results (PEA and GO) were adjusted for multiple comparisons using post hoc tests (FDR-adjusted p-values). Significance threshold was set to `padj < 0.05`.
 
 
-Expression / Enrichment (GO & PEA) – Pathway enrichment analysis and GO enrichment using top 200 CNV-altered genes. [GO and PEA Analysis](https://colab.research.google.com/drive/1xrRFJGal-jbZvlEfnO6ku84TeOKVSmZi)
+## Developer
 
+Developed by **Ana Carolina Pacífico** under guidance from **Omar Arias-Gaguancela, PhD**.
 
-Methodological Notes
-All enriched terms were adjusted using post-hoc multiple testing correction (Benjamini-Hochberg).
+---
 
-Files were saved in /PLOTS/ as .tiff and /TABLES/ as .csv.
+##  License
 
-The input mutation and CNV datasets originated from the COSMIC database and are not publicly shared in compliance with license restrictions.
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+##  Citation
+
+If you use this toolkit or adapt it, please cite the COSMIC database and include reference to this repository.
+
