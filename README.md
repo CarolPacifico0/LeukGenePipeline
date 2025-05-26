@@ -47,7 +47,7 @@ Developed by **Ana Carolina Pacífico** under guidance from **Omar Arias-Gaguanc
 
 ##  License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/CarolPacifico0/Leukemia_Project/blob/main/License/MIT%20License.txt).
 
 ---
 
