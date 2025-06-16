@@ -1,4 +1,4 @@
-LeukGenePipelines - A reproducible workflow for CNV, mutation classification, and pathway enrichment in leukemia
+LeukGenePipeline - A reproducible workflow for CNV, mutation classification, and pathway enrichment in leukemia
 
 This repository contains a collection of interactive pipelines for analyzing somatic mutations and copy number variations (CNVs) in leukemia-related datasets. It was inspired by the structure of [QuickProt](https://github.com/OmarArias-Gaguancela/QuickProt) and developed to allow fast and reproducible exploration of genomic alterations and enrichment analyses.
 
