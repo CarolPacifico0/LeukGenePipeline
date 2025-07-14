@@ -18,8 +18,10 @@ Users can input their own files to run the analysis. Please ensure your input fi
 
 - `Mutations_Leukemia.csv` must include columns:
   - `Gene Name`, `AA Mutation`, `CDS Mutation`, etc.
+  - [Download sample dataset](https://docs.google.com/spreadsheets/d/1Tsk8YqFyrV2L5-wA4FEjOiYl9zGdpjc1GrreSgzh5uM/edit?usp=sharing)
 - `CNV_Leukemia.csv` must include columns:
   - `Gene`, `Gain`, `High-level Gain`, `Loss`, `High-level Loss`, `No Change`, `Total Samples`.
+  - [Download sample dataset](https://docs.google.com/spreadsheets/d/1p0JfeIOqGCqT0wPUdr6c2RqwdNRm01lb3eTOSeAxN58/edit?usp=sharing)
 
 All input files must be in **CSV format**, comma-separated, and uploaded to the correct `Data/` folder within each module.
 
