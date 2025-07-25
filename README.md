@@ -20,9 +20,8 @@ Users can input their own files to run the analysis. Please ensure your input fi
   - `Gene Name`, `AA Mutation`, `CDS Mutation`, etc.
   - [Download sample dataset](https://docs.google.com/spreadsheets/d/1Tsk8YqFyrV2L5-wA4FEjOiYl9zGdpjc1GrreSgzh5uM/edit?usp=sharing)
 - `CNV_Leukemia.csv` must include columns:
-  - `Gene`, `Gain`, `High-level Gain`, `Loss`, `High-level Loss`, `No Change`, `Total Samples`.
+  - `Gene`, `Gain`, `High-level Gain`, `Total Samples`, `Loss`, `High-level Loss`, `No Change`, `Net CNV`,`CNV Event`.
   - [Download sample dataset](https://docs.google.com/spreadsheets/d/1p0JfeIOqGCqT0wPUdr6c2RqwdNRm01lb3eTOSeAxN58/edit?usp=sharing)
-
 All input files must be in **CSV format**, comma-separated, and uploaded to the correct `Data/` folder within each module.
 
 > Mutation and CNV input data used in this project were retrieved from the [COSMIC database](https://cancer.sanger.ac.uk/cosmic). Please note that full data sharing is restricted under COSMIC licensing.
