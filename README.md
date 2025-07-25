@@ -31,7 +31,7 @@ All input files must be in **CSV format**, comma-separated, and uploaded to the 
 
 ##  Notebooks (Open in Colab)
 
-- [Open Mutation Analysis](https://colab.research.google.com/drive/1AccuCMGS-V_6GP-py_TXhL6sWOORjwOE)
+- [Open Mutation Analysis](https://colab.research.google.com/drive/1XXtQN_tjxhXfdwR_mOer8oO6sswBkloD?usp=sharing)
 - [Open CNV Analysis](https://colab.research.google.com/drive/1WiSTtK7gbF8rcRnXQQuxcp8DmMCGGZJL?usp=sharing)
 - [Open PEA and GO Analysis](https://colab.research.google.com/drive/1xrRFJGal-jbZvlEfnO6ku84TeOKVSmZi)
 
